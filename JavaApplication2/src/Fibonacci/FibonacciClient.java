@@ -1,3 +1,5 @@
+package Fibonacci;
+
 //Passo 6 criar o FibonacciClient
 
 import java.net.MalformedURLException;
@@ -11,14 +13,14 @@ public class FibonacciClient {
 	public static void main(String[] args) {
 		try {
 			Object o = Naming.lookup("rmi://localhost/fibonacci");
-			// ligação com o servidor remoto
+			// ligaï¿½ï¿½o com o servidor remoto
 			Fibonacci calculator = (Fibonacci) o;
-			// conversão de tipo
+			// conversï¿½o de tipo
 			 Integer index = new  Integer("11");
-			// número da série
+			// nï¿½mero da sï¿½rie
 			 Integer f = calculator.getFibonacci(index);
-			// chamada de método em interface remota
-			System.out.println(" O " + index + "-ésimo termo da série de Fibonacci é " + f);
+			// chamada de mï¿½todo em interface remota
+			System.out.println(" O " + index + "-ï¿½simo termo da sï¿½rie de Fibonacci ï¿½ " + f);
 			} 
 			catch(MalformedURLException e) {  System.err.print(e.getMessage());}
 			catch(RemoteException re) { System.err.print(re.getMessage()); }

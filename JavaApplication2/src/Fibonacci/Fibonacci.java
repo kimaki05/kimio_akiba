@@ -1,5 +1,7 @@
+package Fibonacci;
+
 // Passo 1
-//Interface remota para implementação de método da séria de Fibinacci
+//Interface remota para implementaï¿½ï¿½o de mï¿½todo da sï¿½ria de Fibinacci
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 

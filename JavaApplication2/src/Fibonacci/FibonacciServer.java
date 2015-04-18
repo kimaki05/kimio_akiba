@@ -1,5 +1,7 @@
-//Passo 3 – Implementar o Servidor
-// Servidor que conterá o objeto da classe FibonacciImpl.java
+package Fibonacci;
+
+//Passo 3 ï¿½ Implementar o Servidor
+// Servidor que conterï¿½ o objeto da classe FibonacciImpl.java
 import java.net.*;
 import java.rmi.*;
 
@@ -7,7 +9,7 @@ public class FibonacciServer {
 	public static void main(String[] args) throws AlreadyBoundException {
 		try {
 			FibonacciImpl f = new FibonacciImpl();
-			// instanciação do objeto remoto
+			// instanciaï¿½ï¿½o do objeto remoto
 			Naming.rebind("fibonacci", f);
 			// registro do servidor
 			System.out.println("Servidor Fibonacci pronto.");
