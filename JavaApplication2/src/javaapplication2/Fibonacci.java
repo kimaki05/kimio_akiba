@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package javaapplication2;
+// Passo 1
+//Interface remota para implementação de método da séria de Fibinacci
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
-/**
- *
- * @author 12122100019
- */
-public interface Fibonacci {
-    
+public interface Fibonacci extends Remote {
+	public Integer getFibonacci(int n) throws RemoteException;
+
+	public Integer getFibonacci(Integer n) throws RemoteException;
 }
